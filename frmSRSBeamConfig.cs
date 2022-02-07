@@ -6,6 +6,8 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.IO;
+using System.Diagnostics;
 
 namespace SRS_Beam_Config
 {
@@ -16,6 +18,14 @@ namespace SRS_Beam_Config
             InitializeComponent();
         }
        public double force, force2, force3, b, a, b2, a2,b3,a3, length, length2,length3, elasticity, inertia, beam_mass, beam_mass2,beam_mass3, deflection,deflection2,deflection3, mma, mmlength, mmgpa, mminertia, frequency,total_def;
+
+        private void frmSRSBeamConfig_Load(object sender, EventArgs e)
+        {
+            System.Reflection.Assembly assy = System.Reflection.Assembly.GetExecutingAssembly();
+            FileVersionInfo fv = FileVersionInfo.GetVersionInfo(assy.Location);
+            string ver = fv.FileVersion;
+            this.Text = "SRS Beam Configuration" +" v." + ver;
+        }
 
         private void txtL2_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -107,7 +117,9 @@ namespace SRS_Beam_Config
             btnThirdBeam.Enabled = false;
             grpBeamConfig2.Visible = false;
             grpBeamConfig3.Visible = false;
-            foreach(TextBox txt in tlpbeamConfig.Controls.OfType<TextBox>())
+            cmbB.Items.Clear();
+            comboBoxBeamL.Items.Clear();
+            foreach (TextBox txt in tlpbeamConfig.Controls.OfType<TextBox>())
             {
                 txt.Clear();
                 cmbB.Text = "";
@@ -178,7 +190,7 @@ namespace SRS_Beam_Config
                 }
             }  
             
-            if(Convert.ToDouble(txtXdir.Text) > 2000.0)
+            if(Convert.ToDouble(txtXdir.Text) > 2000.0 || Convert.ToDouble(txtXdir.Text) < 130.0)
             {
                 foreach (TextBox txt in tlpSystem.Controls.OfType<TextBox>())
                 {
@@ -203,7 +215,7 @@ namespace SRS_Beam_Config
                 }
             }
 
-            if (Convert.ToDouble(txtYdir.Text) > 2000.0)
+            if (Convert.ToDouble(txtYdir.Text) > 2000.0 || Convert.ToDouble(txtYdir.Text) < 130.0)
             {
                 foreach (TextBox txt in tlpSystem.Controls.OfType<TextBox>())
                 {

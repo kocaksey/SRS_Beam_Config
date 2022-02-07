@@ -233,7 +233,7 @@ namespace SRS_Beam_Config
                 btnSecondBeam.Enabled = true;
         }   
         int flagPictureBox = -1;     
-
+        
         private void btnHelp_Click(object sender, EventArgs e)
         {
             flagPictureBox *= -1;

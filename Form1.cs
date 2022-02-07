@@ -151,7 +151,6 @@ namespace SRS_Beam_Config
                     return;
                 }
             }
-
             if (Convert.ToDouble(txtLoad.Text) > 3000.0)
             {
                 grpBeamConfig.Enabled = false;

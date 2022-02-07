@@ -16,7 +16,7 @@ namespace SRS_Beam_Config
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new frmSRSBeamConfig());
         }
     }
 }

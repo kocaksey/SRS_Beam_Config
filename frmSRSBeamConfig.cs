@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace SRS_Beam_Config
 {
-    public partial class Form1 : Form
+    public partial class frmSRSBeamConfig : Form
     {
-        public Form1()
+        public frmSRSBeamConfig()
         {
             InitializeComponent();
         }
@@ -141,7 +141,6 @@ namespace SRS_Beam_Config
         }
         private void btnContinue_Click(object sender, EventArgs e)
         {
-          
 
             foreach (TextBox txt in tlpSystem.Controls.OfType<TextBox>())
             {

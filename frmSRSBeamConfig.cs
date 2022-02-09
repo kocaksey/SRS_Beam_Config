@@ -19,6 +19,8 @@ namespace SRS_Beam_Config
         }
        public double force, force2, force3, b, a, b2, a2,b3,a3, length, length2,length3, elasticity, inertia, beam_mass, beam_mass2,beam_mass3, deflection,deflection2,deflection3, mma, mmlength, mmgpa, mminertia, frequency,total_def;
 
+
+
         private void frmSRSBeamConfig_Load(object sender, EventArgs e)
         {
             System.Reflection.Assembly assy = System.Reflection.Assembly.GetExecutingAssembly();
@@ -117,8 +119,8 @@ namespace SRS_Beam_Config
             btnThirdBeam.Enabled = false;
             grpBeamConfig2.Visible = false;
             grpBeamConfig3.Visible = false;
-            cmbB.Items.Clear();
-            comboBoxBeamL.Items.Clear();
+            cmbB.SelectedIndex = -1;
+            comboBoxBeamL.SelectedIndex = -1;
             foreach (TextBox txt in tlpbeamConfig.Controls.OfType<TextBox>())
             {
                 txt.Clear();
@@ -252,12 +254,12 @@ namespace SRS_Beam_Config
 
             if (flagPictureBox == 1)
             {
-                pictureBox1.Visible = true;
+                grpHelp.Visible = true;
 
             }
             else
             {
-                pictureBox1.Visible = false;
+                grpHelp.Visible = false;
             }
         }
 
@@ -272,7 +274,7 @@ namespace SRS_Beam_Config
                 txtL2.ReadOnly = false;
                 cmbB2.Enabled = true;
                 txtA.Text = "";
-
+                cmbB2.SelectedIndex = -1;
                 flag *= -1;
                 if (flag == 1)
                     grpBeamConfig2.Visible = true;
@@ -347,6 +349,7 @@ namespace SRS_Beam_Config
             grpBeamConfig3.Visible = true;
             txtA2.Text = "";
             flag2 *= -1;
+            comboBoxBeamL3.SelectedIndex = -1;
             if (flag2 == 1 && flag == 1)
                 grpBeamConfig3.Visible = true;
             else
@@ -403,12 +406,18 @@ namespace SRS_Beam_Config
                 MessageBox.Show("Please enter a value.", "Warning !", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
+
             if (txtB2.Text.Trim() == "" && btnThirdBeam.Enabled == true && btnSecondBeam.Enabled == true)
             {
                 MessageBox.Show("Please enter a value.", "Warning !", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             if(cmbB2.Text.Trim()=="" && btnThirdBeam.Enabled == true && btnSecondBeam.Enabled == true)
+            {
+                MessageBox.Show("Please choose length of the beam.", "Warning !", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (cmbB2.Text.Trim() == "" && btnThirdBeam.Enabled == true && btnSecondBeam.Enabled == false)
             {
                 MessageBox.Show("Please choose length of the beam.", "Warning !", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;

@@ -18,3 +18,13 @@ C:\Users\skocak\Desktop\My_Repo\SRS_Beam_Config\SRS_Beam_Config\obj\Debug\SRS_Be
 C:\Users\skocak\Desktop\My_Repo\SRS_Beam_Config\SRS_Beam_Config\obj\Debug\SRS_Beam_Config.exe
 C:\Users\skocak\Desktop\My_Repo\SRS_Beam_Config\SRS_Beam_Config\obj\Debug\SRS_Beam_Config.pdb
 C:\Users\skocak\Desktop\My_Repo\SRS_Beam_Config\SRS_Beam_Config\obj\Debug\SRS_Beam_Config.frmSRSBeamConfig.resources
+C:\Users\etanik\Desktop\YET_Repositories\SRS_Beam_Config\bin\Debug\SRS_Beam_Config.exe.config
+C:\Users\etanik\Desktop\YET_Repositories\SRS_Beam_Config\bin\Debug\SRS_Beam_Config.exe
+C:\Users\etanik\Desktop\YET_Repositories\SRS_Beam_Config\bin\Debug\SRS_Beam_Config.pdb
+C:\Users\etanik\Desktop\YET_Repositories\SRS_Beam_Config\obj\Debug\SRS_Beam_Config.csproj.AssemblyReference.cache
+C:\Users\etanik\Desktop\YET_Repositories\SRS_Beam_Config\obj\Debug\SRS_Beam_Config.frmSRSBeamConfig.resources
+C:\Users\etanik\Desktop\YET_Repositories\SRS_Beam_Config\obj\Debug\SRS_Beam_Config.Properties.Resources.resources
+C:\Users\etanik\Desktop\YET_Repositories\SRS_Beam_Config\obj\Debug\SRS_Beam_Config.csproj.GenerateResource.cache
+C:\Users\etanik\Desktop\YET_Repositories\SRS_Beam_Config\obj\Debug\SRS_Beam_Config.csproj.CoreCompileInputs.cache
+C:\Users\etanik\Desktop\YET_Repositories\SRS_Beam_Config\obj\Debug\SRS_Beam_Config.exe
+C:\Users\etanik\Desktop\YET_Repositories\SRS_Beam_Config\obj\Debug\SRS_Beam_Config.pdb

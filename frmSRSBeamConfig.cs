@@ -390,7 +390,7 @@ namespace SRS_Beam_Config
         private void btnCalculate_Click(object sender, EventArgs e)
         {
 
-
+            
             if (txtL.Text.Trim() == "" || !double.TryParse(txtL.Text, out parameter))
             {
                 MessageBox.Show("Please enter a value.", "Warning !", MessageBoxButtons.OK, MessageBoxIcon.Warning);

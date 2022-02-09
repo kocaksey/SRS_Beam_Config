@@ -262,7 +262,6 @@ namespace SRS_Beam_Config
                 grpHelp.Visible = false;
             }
         }
-
         int flag = -1;
         int flag2 = -1;
 

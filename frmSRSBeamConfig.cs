@@ -265,6 +265,7 @@ namespace SRS_Beam_Config
         int flag = -1;
         int flag2 = -1;
         //
+        //
         private void btnSecondBeam_Click_1(object sender, EventArgs e)
         {
             if (btnContinue.Enabled == false)

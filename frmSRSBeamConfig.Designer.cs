@@ -101,7 +101,7 @@ namespace SRS_Beam_Config
             // BeamPic
             // 
             this.BeamPic.Image = ((System.Drawing.Image)(resources.GetObject("BeamPic.Image")));
-            this.BeamPic.Location = new System.Drawing.Point(5, 460);
+            this.BeamPic.Location = new System.Drawing.Point(37, 460);
             this.BeamPic.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BeamPic.Name = "BeamPic";
             this.BeamPic.Size = new System.Drawing.Size(418, 143);

@@ -113,6 +113,9 @@ namespace SRS_Beam_Config
 
         private void btnChange_Click(object sender, EventArgs e)
         {
+            beam1.Visible = false;
+            beam2.Visible = false;
+            beam3.Visible = false;
             flag = -1;
             flag2 = -1;
             btnSecondBeam.Enabled = false;
@@ -245,6 +248,8 @@ namespace SRS_Beam_Config
                 txtL.Text = "1300";
                 txtL.Enabled = false;
                 btnSecondBeam.Enabled = true;
+                beam2.Visible = false;
+                beam1.Visible = true;
         }   
         int flagPictureBox = -1;     
         
@@ -300,11 +305,14 @@ namespace SRS_Beam_Config
                 if (flag == -1)
                     txtL.Text = "1300";
                     txtL.Enabled = false;
+                    beam2.Visible = false;
                 if (flag == 1)
                     txtL.Enabled = true;
                 txtL2.Text = "1300";
                 txtL2.Enabled = false;
                 btnThirdBeam.Enabled = true;
+                beam1.Visible = false;
+                beam2.Visible = true;
                 if(grpBeamConfig2.Visible==false)
                 {
                     btnThirdBeam.Enabled = false;
@@ -337,6 +345,8 @@ namespace SRS_Beam_Config
                         cmbB.Text = "";
                         comboBoxBeamL.Text = "";
                         txtL.Text = "1300";
+                        beam2.Visible = false;
+                        beam1.Visible = true;
                     }
                 }
             }             
@@ -362,6 +372,8 @@ namespace SRS_Beam_Config
                 txtL2.Text = "";
                 txtL2.Enabled = true;
                 btnSecondBeam.Enabled = false;
+                beam2.Visible = false;
+                beam3.Visible = true;
             }
             else
             {
@@ -372,6 +384,8 @@ namespace SRS_Beam_Config
                 txtL2.Text = "1300";
                 txtL2.Enabled = false;
                 btnSecondBeam.Enabled = true;
+                beam3.Visible = false;
+                beam2.Visible = true;
             }
             foreach (TextBox txt in tlpResult.Controls.OfType<TextBox>())
             {

@@ -83,6 +83,9 @@ namespace SRS_Beam_Config
             this.grpBeamConfig2 = new System.Windows.Forms.GroupBox();
             this.tlpbeamConfig2 = new System.Windows.Forms.TableLayoutPanel();
             this.grpHelp = new System.Windows.Forms.GroupBox();
+            this.beam1 = new System.Windows.Forms.PictureBox();
+            this.beam2 = new System.Windows.Forms.PictureBox();
+            this.beam3 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.BeamPic)).BeginInit();
             this.grpBeamConfig3.SuspendLayout();
             this.tlpbeamConfig3.SuspendLayout();
@@ -96,13 +99,16 @@ namespace SRS_Beam_Config
             this.grpBeamConfig2.SuspendLayout();
             this.tlpbeamConfig2.SuspendLayout();
             this.grpHelp.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.beam1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.beam2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.beam3)).BeginInit();
             this.SuspendLayout();
             // 
             // BeamPic
             // 
             this.BeamPic.Image = ((System.Drawing.Image)(resources.GetObject("BeamPic.Image")));
-            this.BeamPic.Location = new System.Drawing.Point(37, 460);
-            this.BeamPic.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BeamPic.Location = new System.Drawing.Point(8, 367);
+            this.BeamPic.Margin = new System.Windows.Forms.Padding(2);
             this.BeamPic.Name = "BeamPic";
             this.BeamPic.Size = new System.Drawing.Size(418, 143);
             this.BeamPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -147,7 +153,7 @@ namespace SRS_Beam_Config
             this.txtLoad.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtLoad.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtLoad.Location = new System.Drawing.Point(259, 5);
-            this.txtLoad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtLoad.Margin = new System.Windows.Forms.Padding(2);
             this.txtLoad.Name = "txtLoad";
             this.txtLoad.Size = new System.Drawing.Size(80, 20);
             this.txtLoad.TabIndex = 3;
@@ -156,7 +162,7 @@ namespace SRS_Beam_Config
             // 
             this.btnCalculate.Enabled = false;
             this.btnCalculate.Location = new System.Drawing.Point(374, 178);
-            this.btnCalculate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCalculate.Margin = new System.Windows.Forms.Padding(2);
             this.btnCalculate.Name = "btnCalculate";
             this.btnCalculate.Size = new System.Drawing.Size(253, 23);
             this.btnCalculate.TabIndex = 11;
@@ -166,22 +172,23 @@ namespace SRS_Beam_Config
             // 
             // lbFrequency
             // 
-            this.lbFrequency.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbFrequency.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lbFrequency.AutoSize = true;
             this.lbFrequency.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbFrequency.Location = new System.Drawing.Point(8, 60);
+            this.lbFrequency.Location = new System.Drawing.Point(2, 60);
             this.lbFrequency.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbFrequency.Name = "lbFrequency";
             this.lbFrequency.Size = new System.Drawing.Size(116, 13);
             this.lbFrequency.TabIndex = 31;
             this.lbFrequency.Text = "Natural Frequency [Hz]";
+            this.lbFrequency.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // txtFrequency
             // 
             this.txtFrequency.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtFrequency.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtFrequency.Location = new System.Drawing.Point(148, 56);
-            this.txtFrequency.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtFrequency.Location = new System.Drawing.Point(224, 56);
+            this.txtFrequency.Margin = new System.Windows.Forms.Padding(2);
             this.txtFrequency.Name = "txtFrequency";
             this.txtFrequency.ReadOnly = true;
             this.txtFrequency.Size = new System.Drawing.Size(76, 20);
@@ -191,7 +198,7 @@ namespace SRS_Beam_Config
             // 
             this.btnSecondBeam.Enabled = false;
             this.btnSecondBeam.Location = new System.Drawing.Point(374, 205);
-            this.btnSecondBeam.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSecondBeam.Margin = new System.Windows.Forms.Padding(2);
             this.btnSecondBeam.Name = "btnSecondBeam";
             this.btnSecondBeam.Size = new System.Drawing.Size(253, 22);
             this.btnSecondBeam.TabIndex = 12;
@@ -209,7 +216,7 @@ namespace SRS_Beam_Config
             "1600",
             "2000"});
             this.comboBoxBeamL.Location = new System.Drawing.Point(131, 110);
-            this.comboBoxBeamL.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxBeamL.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxBeamL.Name = "comboBoxBeamL";
             this.comboBoxBeamL.Size = new System.Drawing.Size(100, 21);
             this.comboBoxBeamL.TabIndex = 10;
@@ -230,7 +237,7 @@ namespace SRS_Beam_Config
             this.txtA.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtA.Enabled = false;
             this.txtA.Location = new System.Drawing.Point(131, 41);
-            this.txtA.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtA.Margin = new System.Windows.Forms.Padding(2);
             this.txtA.Name = "txtA";
             this.txtA.Size = new System.Drawing.Size(100, 20);
             this.txtA.TabIndex = 42;
@@ -239,7 +246,7 @@ namespace SRS_Beam_Config
             // 
             this.txtL.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtL.Location = new System.Drawing.Point(131, 75);
-            this.txtL.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtL.Margin = new System.Windows.Forms.Padding(2);
             this.txtL.Name = "txtL";
             this.txtL.Size = new System.Drawing.Size(100, 20);
             this.txtL.TabIndex = 9;
@@ -249,7 +256,7 @@ namespace SRS_Beam_Config
             // 
             this.txtL3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtL3.Location = new System.Drawing.Point(130, 82);
-            this.txtL3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtL3.Margin = new System.Windows.Forms.Padding(2);
             this.txtL3.Name = "txtL3";
             this.txtL3.ReadOnly = true;
             this.txtL3.Size = new System.Drawing.Size(103, 20);
@@ -260,7 +267,7 @@ namespace SRS_Beam_Config
             this.txtA3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtA3.Enabled = false;
             this.txtA3.Location = new System.Drawing.Point(132, 45);
-            this.txtA3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtA3.Margin = new System.Windows.Forms.Padding(2);
             this.txtA3.Name = "txtA3";
             this.txtA3.Size = new System.Drawing.Size(100, 20);
             this.txtA3.TabIndex = 84;
@@ -286,7 +293,7 @@ namespace SRS_Beam_Config
             "1600",
             "2000"});
             this.comboBoxBeamL3.Location = new System.Drawing.Point(130, 119);
-            this.comboBoxBeamL3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxBeamL3.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxBeamL3.Name = "comboBoxBeamL3";
             this.comboBoxBeamL3.Size = new System.Drawing.Size(103, 21);
             this.comboBoxBeamL3.TabIndex = 20;
@@ -295,7 +302,7 @@ namespace SRS_Beam_Config
             // 
             this.txtB3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtB3.Location = new System.Drawing.Point(130, 8);
-            this.txtB3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtB3.Margin = new System.Windows.Forms.Padding(2);
             this.txtB3.Name = "txtB3";
             this.txtB3.Size = new System.Drawing.Size(103, 20);
             this.txtB3.TabIndex = 19;
@@ -338,7 +345,7 @@ namespace SRS_Beam_Config
             // 
             this.btnThirdBeam.Enabled = false;
             this.btnThirdBeam.Location = new System.Drawing.Point(374, 403);
-            this.btnThirdBeam.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnThirdBeam.Margin = new System.Windows.Forms.Padding(2);
             this.btnThirdBeam.Name = "btnThirdBeam";
             this.btnThirdBeam.Size = new System.Drawing.Size(253, 22);
             this.btnThirdBeam.TabIndex = 14;
@@ -348,22 +355,23 @@ namespace SRS_Beam_Config
             // 
             // label61
             // 
-            this.label61.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label61.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label61.AutoSize = true;
             this.label61.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label61.Location = new System.Drawing.Point(12, 15);
+            this.label61.Location = new System.Drawing.Point(2, 15);
             this.label61.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label61.Name = "label61";
             this.label61.Size = new System.Drawing.Size(107, 13);
             this.label61.TabIndex = 100;
             this.label61.Text = "Total Deflection [mm]";
+            this.label61.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // txtTotalDef
             // 
             this.txtTotalDef.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtTotalDef.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtTotalDef.Location = new System.Drawing.Point(148, 12);
-            this.txtTotalDef.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTotalDef.Location = new System.Drawing.Point(224, 12);
+            this.txtTotalDef.Margin = new System.Windows.Forms.Padding(2);
             this.txtTotalDef.Name = "txtTotalDef";
             this.txtTotalDef.ReadOnly = true;
             this.txtTotalDef.Size = new System.Drawing.Size(76, 20);
@@ -373,9 +381,9 @@ namespace SRS_Beam_Config
             // 
             this.grpBeamConfig3.Controls.Add(this.tlpbeamConfig3);
             this.grpBeamConfig3.Location = new System.Drawing.Point(374, 429);
-            this.grpBeamConfig3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grpBeamConfig3.Margin = new System.Windows.Forms.Padding(2);
             this.grpBeamConfig3.Name = "grpBeamConfig3";
-            this.grpBeamConfig3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grpBeamConfig3.Padding = new System.Windows.Forms.Padding(2);
             this.grpBeamConfig3.Size = new System.Drawing.Size(253, 170);
             this.grpBeamConfig3.TabIndex = 17;
             this.grpBeamConfig3.TabStop = false;
@@ -410,9 +418,9 @@ namespace SRS_Beam_Config
             this.grpBeamConfig.Controls.Add(this.tlpbeamConfig);
             this.grpBeamConfig.Enabled = false;
             this.grpBeamConfig.Location = new System.Drawing.Point(374, 12);
-            this.grpBeamConfig.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grpBeamConfig.Margin = new System.Windows.Forms.Padding(2);
             this.grpBeamConfig.Name = "grpBeamConfig";
-            this.grpBeamConfig.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grpBeamConfig.Padding = new System.Windows.Forms.Padding(2);
             this.grpBeamConfig.Size = new System.Drawing.Size(253, 162);
             this.grpBeamConfig.TabIndex = 1000;
             this.grpBeamConfig.TabStop = false;
@@ -469,7 +477,7 @@ namespace SRS_Beam_Config
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(8, 18);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(653, 437);
+            this.pictureBox1.Size = new System.Drawing.Size(501, 332);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 106;
             this.pictureBox1.TabStop = false;
@@ -579,9 +587,9 @@ namespace SRS_Beam_Config
             // groupBox5
             // 
             this.groupBox5.Controls.Add(this.tlpResult);
-            this.groupBox5.Location = new System.Drawing.Point(632, 12);
+            this.groupBox5.Location = new System.Drawing.Point(12, 225);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(253, 115);
+            this.groupBox5.Size = new System.Drawing.Size(357, 115);
             this.groupBox5.TabIndex = 777;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Results";
@@ -600,14 +608,14 @@ namespace SRS_Beam_Config
             this.tlpResult.RowCount = 2;
             this.tlpResult.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tlpResult.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tlpResult.Size = new System.Drawing.Size(240, 89);
+            this.tlpResult.Size = new System.Drawing.Size(339, 89);
             this.tlpResult.TabIndex = 779;
             // 
             // txtL2
             // 
             this.txtL2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtL2.Location = new System.Drawing.Point(134, 80);
-            this.txtL2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtL2.Margin = new System.Windows.Forms.Padding(2);
             this.txtL2.Name = "txtL2";
             this.txtL2.ReadOnly = true;
             this.txtL2.Size = new System.Drawing.Size(95, 20);
@@ -619,7 +627,7 @@ namespace SRS_Beam_Config
             this.txtA2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtA2.Enabled = false;
             this.txtA2.Location = new System.Drawing.Point(134, 44);
-            this.txtA2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtA2.Margin = new System.Windows.Forms.Padding(2);
             this.txtA2.Name = "txtA2";
             this.txtA2.Size = new System.Drawing.Size(95, 20);
             this.txtA2.TabIndex = 55;
@@ -645,7 +653,7 @@ namespace SRS_Beam_Config
             "1600",
             "2000"});
             this.cmbB2.Location = new System.Drawing.Point(134, 116);
-            this.cmbB2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbB2.Margin = new System.Windows.Forms.Padding(2);
             this.cmbB2.Name = "cmbB2";
             this.cmbB2.Size = new System.Drawing.Size(95, 21);
             this.cmbB2.TabIndex = 16;
@@ -654,7 +662,7 @@ namespace SRS_Beam_Config
             // 
             this.txtB2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtB2.Location = new System.Drawing.Point(134, 8);
-            this.txtB2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtB2.Margin = new System.Windows.Forms.Padding(2);
             this.txtB2.Name = "txtB2";
             this.txtB2.Size = new System.Drawing.Size(95, 20);
             this.txtB2.TabIndex = 15;
@@ -697,9 +705,9 @@ namespace SRS_Beam_Config
             // 
             this.grpBeamConfig2.Controls.Add(this.tlpbeamConfig2);
             this.grpBeamConfig2.Location = new System.Drawing.Point(374, 231);
-            this.grpBeamConfig2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grpBeamConfig2.Margin = new System.Windows.Forms.Padding(2);
             this.grpBeamConfig2.Name = "grpBeamConfig2";
-            this.grpBeamConfig2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grpBeamConfig2.Padding = new System.Windows.Forms.Padding(2);
             this.grpBeamConfig2.Size = new System.Drawing.Size(253, 168);
             this.grpBeamConfig2.TabIndex = 13;
             this.grpBeamConfig2.TabStop = false;
@@ -733,20 +741,57 @@ namespace SRS_Beam_Config
             // 
             this.grpHelp.Controls.Add(this.pictureBox1);
             this.grpHelp.Controls.Add(this.BeamPic);
-            this.grpHelp.Location = new System.Drawing.Point(893, 12);
+            this.grpHelp.Location = new System.Drawing.Point(1045, 12);
             this.grpHelp.Name = "grpHelp";
-            this.grpHelp.Size = new System.Drawing.Size(667, 647);
+            this.grpHelp.Size = new System.Drawing.Size(527, 537);
             this.grpHelp.TabIndex = 1001;
             this.grpHelp.TabStop = false;
             this.grpHelp.Text = "Help";
             this.grpHelp.Visible = false;
+            // 
+            // beam1
+            // 
+            this.beam1.Image = ((System.Drawing.Image)(resources.GetObject("beam1.Image")));
+            this.beam1.Location = new System.Drawing.Point(632, 12);
+            this.beam1.Name = "beam1";
+            this.beam1.Size = new System.Drawing.Size(415, 297);
+            this.beam1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.beam1.TabIndex = 1002;
+            this.beam1.TabStop = false;
+            this.beam1.Visible = false;
+            // 
+            // beam2
+            // 
+            this.beam2.Image = ((System.Drawing.Image)(resources.GetObject("beam2.Image")));
+            this.beam2.Location = new System.Drawing.Point(628, 12);
+            this.beam2.Name = "beam2";
+            this.beam2.Size = new System.Drawing.Size(419, 297);
+            this.beam2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.beam2.TabIndex = 1003;
+            this.beam2.TabStop = false;
+            this.beam2.Visible = false;
+            // 
+            // beam3
+            // 
+            this.beam3.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.beam3.Image = ((System.Drawing.Image)(resources.GetObject("beam3.Image")));
+            this.beam3.Location = new System.Drawing.Point(628, 12);
+            this.beam3.Name = "beam3";
+            this.beam3.Size = new System.Drawing.Size(419, 301);
+            this.beam3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.beam3.TabIndex = 1004;
+            this.beam3.TabStop = false;
+            this.beam3.Visible = false;
             // 
             // frmSRSBeamConfig
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1443, 666);
+            this.ClientSize = new System.Drawing.Size(1685, 786);
+            this.Controls.Add(this.beam3);
+            this.Controls.Add(this.beam2);
+            this.Controls.Add(this.beam1);
             this.Controls.Add(this.grpHelp);
             this.Controls.Add(this.grpBeamConfig2);
             this.Controls.Add(this.groupBox5);
@@ -760,7 +805,7 @@ namespace SRS_Beam_Config
             this.Controls.Add(this.grpBeamConfig3);
             this.Controls.Add(this.btnCalculate);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmSRSBeamConfig";
             this.Text = " SRS Beam Configuration";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -783,6 +828,9 @@ namespace SRS_Beam_Config
             this.tlpbeamConfig2.ResumeLayout(false);
             this.tlpbeamConfig2.PerformLayout();
             this.grpHelp.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.beam1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.beam2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.beam3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -841,6 +889,9 @@ namespace SRS_Beam_Config
         private System.Windows.Forms.TableLayoutPanel tlpbeamConfig2;
         private System.Windows.Forms.TableLayoutPanel tlpbeamConfig3;
         private System.Windows.Forms.GroupBox grpHelp;
+        private System.Windows.Forms.PictureBox beam1;
+        private System.Windows.Forms.PictureBox beam2;
+        private System.Windows.Forms.PictureBox beam3;
     }
 }
 

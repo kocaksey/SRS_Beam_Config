@@ -562,6 +562,7 @@ namespace SRS_Beam_Config
                         frequency = (1 / (2 * Math.PI)) * (Math.Pow((9810 / (total_def)), 0.5));
                         txtFrequency.Text = Convert.ToString(frequency);
                         txtTotalDef.Text = Convert.ToString(total_def);
+            //s
         }
     }
 }

@@ -60,7 +60,6 @@ namespace SRS_Beam_Config
             this.tlpbeamConfig = new System.Windows.Forms.TableLayoutPanel();
             this.cmbB = new System.Windows.Forms.ComboBox();
             this.btnHelp = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tlpSystem = new System.Windows.Forms.TableLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -82,35 +81,34 @@ namespace SRS_Beam_Config
             this.label31 = new System.Windows.Forms.Label();
             this.grpBeamConfig2 = new System.Windows.Forms.GroupBox();
             this.tlpbeamConfig2 = new System.Windows.Forms.TableLayoutPanel();
-            this.grpHelp = new System.Windows.Forms.GroupBox();
             this.beam1 = new System.Windows.Forms.PictureBox();
             this.beam2 = new System.Windows.Forms.PictureBox();
             this.beam3 = new System.Windows.Forms.PictureBox();
+            this.grpHelp = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.BeamPic)).BeginInit();
             this.grpBeamConfig3.SuspendLayout();
             this.tlpbeamConfig3.SuspendLayout();
             this.grpBeamConfig.SuspendLayout();
             this.tlpbeamConfig.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tlpSystem.SuspendLayout();
             this.grpSystem.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.tlpResult.SuspendLayout();
             this.grpBeamConfig2.SuspendLayout();
             this.tlpbeamConfig2.SuspendLayout();
-            this.grpHelp.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.beam1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.beam2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.beam3)).BeginInit();
+            this.grpHelp.SuspendLayout();
             this.SuspendLayout();
             // 
             // BeamPic
             // 
             this.BeamPic.Image = ((System.Drawing.Image)(resources.GetObject("BeamPic.Image")));
-            this.BeamPic.Location = new System.Drawing.Point(8, 367);
+            this.BeamPic.Location = new System.Drawing.Point(12, 224);
             this.BeamPic.Margin = new System.Windows.Forms.Padding(2);
             this.BeamPic.Name = "BeamPic";
-            this.BeamPic.Size = new System.Drawing.Size(418, 143);
+            this.BeamPic.Size = new System.Drawing.Size(357, 143);
             this.BeamPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.BeamPic.TabIndex = 2;
             this.BeamPic.TabStop = false;
@@ -472,16 +470,6 @@ namespace SRS_Beam_Config
             this.btnHelp.UseVisualStyleBackColor = true;
             this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(8, 18);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(501, 332);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 106;
-            this.pictureBox1.TabStop = false;
-            // 
             // tlpSystem
             // 
             this.tlpSystem.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -587,7 +575,7 @@ namespace SRS_Beam_Config
             // groupBox5
             // 
             this.groupBox5.Controls.Add(this.tlpResult);
-            this.groupBox5.Location = new System.Drawing.Point(12, 225);
+            this.groupBox5.Location = new System.Drawing.Point(12, 372);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(357, 115);
             this.groupBox5.TabIndex = 777;
@@ -596,6 +584,7 @@ namespace SRS_Beam_Config
             // 
             // tlpResult
             // 
+            this.tlpResult.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tlpResult.ColumnCount = 2;
             this.tlpResult.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 55.11111F));
             this.tlpResult.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 44.88889F));
@@ -737,24 +726,12 @@ namespace SRS_Beam_Config
             this.tlpbeamConfig2.Size = new System.Drawing.Size(243, 145);
             this.tlpbeamConfig2.TabIndex = 14;
             // 
-            // grpHelp
-            // 
-            this.grpHelp.Controls.Add(this.pictureBox1);
-            this.grpHelp.Controls.Add(this.BeamPic);
-            this.grpHelp.Location = new System.Drawing.Point(1045, 12);
-            this.grpHelp.Name = "grpHelp";
-            this.grpHelp.Size = new System.Drawing.Size(527, 537);
-            this.grpHelp.TabIndex = 1001;
-            this.grpHelp.TabStop = false;
-            this.grpHelp.Text = "Help";
-            this.grpHelp.Visible = false;
-            // 
             // beam1
             // 
             this.beam1.Image = ((System.Drawing.Image)(resources.GetObject("beam1.Image")));
-            this.beam1.Location = new System.Drawing.Point(632, 12);
+            this.beam1.Location = new System.Drawing.Point(6, 19);
             this.beam1.Name = "beam1";
-            this.beam1.Size = new System.Drawing.Size(415, 297);
+            this.beam1.Size = new System.Drawing.Size(483, 304);
             this.beam1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.beam1.TabIndex = 1002;
             this.beam1.TabStop = false;
@@ -763,9 +740,9 @@ namespace SRS_Beam_Config
             // beam2
             // 
             this.beam2.Image = ((System.Drawing.Image)(resources.GetObject("beam2.Image")));
-            this.beam2.Location = new System.Drawing.Point(628, 12);
+            this.beam2.Location = new System.Drawing.Point(7, 18);
             this.beam2.Name = "beam2";
-            this.beam2.Size = new System.Drawing.Size(419, 297);
+            this.beam2.Size = new System.Drawing.Size(478, 319);
             this.beam2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.beam2.TabIndex = 1003;
             this.beam2.TabStop = false;
@@ -775,23 +752,33 @@ namespace SRS_Beam_Config
             // 
             this.beam3.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.beam3.Image = ((System.Drawing.Image)(resources.GetObject("beam3.Image")));
-            this.beam3.Location = new System.Drawing.Point(628, 12);
+            this.beam3.Location = new System.Drawing.Point(6, 18);
             this.beam3.Name = "beam3";
-            this.beam3.Size = new System.Drawing.Size(419, 301);
+            this.beam3.Size = new System.Drawing.Size(478, 328);
             this.beam3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.beam3.TabIndex = 1004;
             this.beam3.TabStop = false;
             this.beam3.Visible = false;
+            // 
+            // grpHelp
+            // 
+            this.grpHelp.Controls.Add(this.beam3);
+            this.grpHelp.Controls.Add(this.beam1);
+            this.grpHelp.Controls.Add(this.beam2);
+            this.grpHelp.Location = new System.Drawing.Point(632, 12);
+            this.grpHelp.Name = "grpHelp";
+            this.grpHelp.Size = new System.Drawing.Size(490, 355);
+            this.grpHelp.TabIndex = 1001;
+            this.grpHelp.TabStop = false;
+            this.grpHelp.Text = "Help";
             // 
             // frmSRSBeamConfig
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1685, 786);
-            this.Controls.Add(this.beam3);
-            this.Controls.Add(this.beam2);
-            this.Controls.Add(this.beam1);
+            this.ClientSize = new System.Drawing.Size(1129, 604);
+            this.Controls.Add(this.BeamPic);
             this.Controls.Add(this.grpHelp);
             this.Controls.Add(this.grpBeamConfig2);
             this.Controls.Add(this.groupBox5);
@@ -817,7 +804,6 @@ namespace SRS_Beam_Config
             this.grpBeamConfig.ResumeLayout(false);
             this.tlpbeamConfig.ResumeLayout(false);
             this.tlpbeamConfig.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tlpSystem.ResumeLayout(false);
             this.tlpSystem.PerformLayout();
             this.grpSystem.ResumeLayout(false);
@@ -827,10 +813,10 @@ namespace SRS_Beam_Config
             this.grpBeamConfig2.ResumeLayout(false);
             this.tlpbeamConfig2.ResumeLayout(false);
             this.tlpbeamConfig2.PerformLayout();
-            this.grpHelp.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.beam1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.beam2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.beam3)).EndInit();
+            this.grpHelp.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -863,7 +849,6 @@ namespace SRS_Beam_Config
         private System.Windows.Forms.GroupBox grpBeamConfig3;
         private System.Windows.Forms.GroupBox grpBeamConfig;
         private System.Windows.Forms.Button btnHelp;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TableLayoutPanel tlpbeamConfig;
         private System.Windows.Forms.TableLayoutPanel tlpSystem;
         private System.Windows.Forms.Label label2;
@@ -888,10 +873,10 @@ namespace SRS_Beam_Config
         private System.Windows.Forms.GroupBox grpBeamConfig2;
         private System.Windows.Forms.TableLayoutPanel tlpbeamConfig2;
         private System.Windows.Forms.TableLayoutPanel tlpbeamConfig3;
-        private System.Windows.Forms.GroupBox grpHelp;
         private System.Windows.Forms.PictureBox beam1;
         private System.Windows.Forms.PictureBox beam2;
         private System.Windows.Forms.PictureBox beam3;
+        private System.Windows.Forms.GroupBox grpHelp;
     }
 }
 

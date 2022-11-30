@@ -505,7 +505,7 @@ namespace SRS_Beam_Config
                                 beam_mass3 = 95;
                                 break;
                             case "":
-                                beam_mass = 0;
+                                beam_mass3 = 0;
                                 break;
                         }
                         if (txtB2.Text != "")
@@ -553,11 +553,11 @@ namespace SRS_Beam_Config
                         }
                         if (btnThirdBeam.Enabled == true && btnSecondBeam.Enabled == true)
                         { 
-                            total_def = deflection + deflection2;
+                            total_def =  deflection + deflection2;
                         }
                         if(btnSecondBeam.Enabled==false)
                         {
-                            total_def = deflection + deflection2 + deflection3;
+                            total_def =  deflection + deflection2 + deflection3;
                         }
                         frequency = (1 / (2 * Math.PI)) * (Math.Pow((9810 / (total_def)), 0.5));
                         txtFrequency.Text = Convert.ToString(frequency);
